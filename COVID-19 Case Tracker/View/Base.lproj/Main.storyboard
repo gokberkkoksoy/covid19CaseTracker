@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Case_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-rg-pDe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkD-gg-WpW" userLabel="HeaderView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLDWIDE COVID-19 CASES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cui-cc-OUU">
+                                                <rect key="frame" x="24.5" y="26" width="326.5" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cui-cc-OUU" firstAttribute="centerX" secondItem="GkD-gg-WpW" secondAttribute="centerX" id="iBk-px-dGl"/>
+                                            <constraint firstItem="cui-cc-OUU" firstAttribute="centerY" secondItem="GkD-gg-WpW" secondAttribute="centerY" id="qIr-tW-dhs"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-sh-H63" userLabel="SearchBarView">
+                                        <rect key="frame" x="0.0" y="83.5" width="375" height="82.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="adn-bI-dmQ">
+                                                <rect key="frame" x="8" y="13.5" width="359" height="55.5"/>
+                                                <subviews>
+                                                    <searchBar contentMode="redraw" barStyle="black" placeholder="Enter a country" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r01-Y2-84c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="55"/>
+                                                        <color key="barTintColor" red="0.1082497165" green="0.2622925639" blue="0.28235745429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <scopeButtonTitles>
+                                                            <string>Title</string>
+                                                            <string>Title</string>
+                                                        </scopeButtonTitles>
+                                                    </searchBar>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="adn-bI-dmQ" firstAttribute="top" secondItem="mp7-sh-H63" secondAttribute="top" constant="13.5" id="96o-Gs-NUc"/>
+                                            <constraint firstItem="adn-bI-dmQ" firstAttribute="centerX" secondItem="mp7-sh-H63" secondAttribute="centerX" id="9UR-RS-AEG"/>
+                                            <constraint firstItem="adn-bI-dmQ" firstAttribute="leading" secondItem="mp7-sh-H63" secondAttribute="leadingMargin" id="W9D-nZ-4DT"/>
+                                            <constraint firstItem="adn-bI-dmQ" firstAttribute="centerY" secondItem="mp7-sh-H63" secondAttribute="centerY" id="fWb-ba-8TV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Dw-rA-C8X" userLabel="TotalCaseView">
+                                        <rect key="frame" x="0.0" y="167" width="375" height="82.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="6Wj-Yv-Ito">
+                                                <rect key="frame" x="72.5" y="27" width="230.5" height="28.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL CASES: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml2-PF-usy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="161" height="28.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow0-li-kwd">
+                                                        <rect key="frame" x="221" y="0.0" width="9.5" height="28.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6Wj-Yv-Ito" firstAttribute="centerY" secondItem="6Dw-rA-C8X" secondAttribute="centerY" id="8u3-dp-8Mb"/>
+                                            <constraint firstItem="6Wj-Yv-Ito" firstAttribute="centerX" secondItem="6Dw-rA-C8X" secondAttribute="centerX" id="a6r-Q6-2tP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mT1-4k-rWj" userLabel="TotalDeathView">
+                                        <rect key="frame" x="0.0" y="250.5" width="375" height="82.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Vvo-Gr-BSf">
+                                                <rect key="frame" x="73.5" y="27.5" width="228" height="27.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL DEATHS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3d3-MZ-gE9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0K-2R-lN0">
+                                                        <rect key="frame" x="218.5" y="0.0" width="9.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Vvo-Gr-BSf" firstAttribute="centerX" secondItem="mT1-4k-rWj" secondAttribute="centerX" id="Rk3-Up-Ffh"/>
+                                            <constraint firstItem="Vvo-Gr-BSf" firstAttribute="centerY" secondItem="mT1-4k-rWj" secondAttribute="centerY" id="y6Q-yw-aFh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FmK-ET-mKs" userLabel="TotalRecoveredView">
+                                        <rect key="frame" x="0.0" y="334" width="375" height="82.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Mkb-fb-L3U">
+                                                <rect key="frame" x="50.5" y="27.5" width="274.5" height="27.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL RECOVERED:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PT2-TA-Why">
+                                                        <rect key="frame" x="0.0" y="0.0" width="205" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-8q-a7r">
+                                                        <rect key="frame" x="265" y="0.0" width="9.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Mkb-fb-L3U" firstAttribute="centerX" secondItem="FmK-ET-mKs" secondAttribute="centerX" id="e9u-FG-dp3"/>
+                                            <constraint firstItem="Mkb-fb-L3U" firstAttribute="centerY" secondItem="FmK-ET-mKs" secondAttribute="centerY" id="nm9-Zx-aPc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-Q2-E3b" userLabel="NewCaseView">
+                                        <rect key="frame" x="0.0" y="417.5" width="375" height="82.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="314-CP-6Pz">
+                                                <rect key="frame" x="85.5" y="27.5" width="204" height="27.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW CASES:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-UO-Zyb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmY-k2-51T">
+                                                        <rect key="frame" x="194.5" y="0.0" width="9.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="314-CP-6Pz" firstAttribute="centerX" secondItem="dL7-Q2-E3b" secondAttribute="centerX" id="ajy-Kk-ZzG"/>
+                                            <constraint firstItem="314-CP-6Pz" firstAttribute="centerY" secondItem="dL7-Q2-E3b" secondAttribute="centerY" id="w44-i3-NWw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGQ-oT-tov" userLabel="NewDeathView">
+                                        <rect key="frame" x="0.0" y="501" width="375" height="82.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="tij-T2-Eou">
+                                                <rect key="frame" x="80.5" y="27.5" width="214.5" height="27.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW DEATHS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOz-Qi-cx3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-LB-lsu">
+                                                        <rect key="frame" x="205" y="0.0" width="9.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tij-T2-Eou" firstAttribute="centerX" secondItem="QGQ-oT-tov" secondAttribute="centerX" id="0WK-tI-clS"/>
+                                            <constraint firstItem="tij-T2-Eou" firstAttribute="centerY" secondItem="QGQ-oT-tov" secondAttribute="centerY" id="pJX-qp-Eo3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnn-gS-WPG" userLabel="NewRecoveredView">
+                                        <rect key="frame" x="0.0" y="584.5" width="375" height="82.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-VZ-1eI">
+                                                <rect key="frame" x="57" y="27.5" width="261" height="27.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW RECOVERED:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyo-dM-xEQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="191.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OV-Ob-FA4">
+                                                        <rect key="frame" x="251.5" y="0.0" width="9.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fJ1-VZ-1eI" firstAttribute="centerY" secondItem="dnn-gS-WPG" secondAttribute="centerY" id="Ruz-Zi-YUA"/>
+                                            <constraint firstItem="fJ1-VZ-1eI" firstAttribute="centerX" secondItem="dnn-gS-WPG" secondAttribute="centerX" id="gEA-My-0R1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.088085480029999996" green="0.21140226719999999" blue="0.22745472189999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6dW-rg-pDe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3QX-e2-z2u"/>
+                            <constraint firstItem="6dW-rg-pDe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hrl-VM-stj"/>
+                            <constraint firstItem="6dW-rg-pDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Un7-pY-EYb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6dW-rg-pDe" secondAttribute="bottom" id="eIM-bS-n42"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countrySearchBar" destination="r01-Y2-84c" id="CH3-jt-l9W"/>
+                        <outlet property="mainTitle" destination="cui-cc-OUU" id="Bku-5J-UYc"/>
+                        <outlet property="newCaseNum" destination="mmY-k2-51T" id="O18-rK-mm7"/>
+                        <outlet property="newCaseTitle" destination="ZAD-UO-Zyb" id="upo-Gr-Mex"/>
+                        <outlet property="newDeathNum" destination="MYT-LB-lsu" id="6Ms-3I-3NU"/>
+                        <outlet property="newDeathTitle" destination="iOz-Qi-cx3" id="mgY-Rq-0ZP"/>
+                        <outlet property="newRecoveredNum" destination="4OV-Ob-FA4" id="8gh-rI-pmp"/>
+                        <outlet property="newRecoveredTitle" destination="xyo-dM-xEQ" id="zgf-vW-Oir"/>
+                        <outlet property="totalCaseNum" destination="Ow0-li-kwd" id="ueC-01-WU9"/>
+                        <outlet property="totalCaseTitle" destination="Ml2-PF-usy" id="3R0-Wz-yLN"/>
+                        <outlet property="totalDeathNum" destination="N0K-2R-lN0" id="ShN-51-hgY"/>
+                        <outlet property="totalDeathTitle" destination="3d3-MZ-gE9" id="H9S-yz-Jx3"/>
+                        <outlet property="totalRecoveredNum" destination="pe7-8q-a7r" id="lFM-7j-BLK"/>
+                        <outlet property="totalRecoveredTitle" destination="PT2-TA-Why" id="84U-6Z-hC2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
