@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         countrySearchBar.delegate = self
         
         caseManager.getGlobalStats()
+        countrySearchBar.placeholder = "Enter a country"
 
     }
 
@@ -67,60 +68,34 @@ extension ViewController: CaseManagerDelegate {
         }
     }
 }
-//MARK: - TEXT FIELD DELEGATE
-/*extension ViewController: UITextFieldDelegate {
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if countryTextField.text != "" {
-            return true
-        } else {
-            countryTextField.placeholder = "Enter a country"
-            return false
-        }
-        
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        countryTextField.endEditing(true)
-//        print("\(countryTextField.text!) fdbmldfşb")
-        return true
-    }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if let country = countryTextField.text {
-            caseManager.getStatsOf(country: country)
-            print(countryTextField.text!)
-        }
-        //countryTextField.text = ""
-    }
-}
-*/
-
+//MARK: - SEARCH BAR DELEGATE
 extension ViewController : UISearchBarDelegate {
-    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
-        if countrySearchBar.text != "" {
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool { // WHEN TRIES TO SEARCH WITHOUT ENTERING CITY
+        if countrySearchBar.text != "" { // If entered a country, dismiss the keyboard
             return true
         } else {
             countrySearchBar.placeholder = "Enter a country"
-            return false
+            return true
         }
     }
-    
-    /*func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        if let country = countrySearchBar.text {
-            caseManager.getStatsOf(country: country)
-            print(countryTextField.text!)
-        }
-    }*/
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+   
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { // SEARCH BUTTON CLICKED
         print(countrySearchBar.text!)
-        countrySearchBar.endEditing(true)
+        countrySearchBar.resignFirstResponder()
         if let country = countrySearchBar.text {
             caseManager.getStatsOf(country: country)
+            countrySearchBar.placeholder = "Enter a country"
             print(countrySearchBar.text!)
         }
     }
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        countrySearchBar.endEditing(true)
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) { // CANCEL BUTTON CLICKED
         countrySearchBar.text! = ""
         countrySearchBar.placeholder! = "Enter a country"
+        countrySearchBar.endEditing(true)
     }
+    
+    /*func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        countrySearchBar.endEditing(true)
+    } */
+    
 }

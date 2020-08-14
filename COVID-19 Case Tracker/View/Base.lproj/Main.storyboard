@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Case_Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-rg-pDe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkD-gg-WpW" userLabel="HeaderView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="101.33333333333333"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLDWIDE COVID-19 CASES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cui-cc-OUU">
-                                                <rect key="frame" x="24.5" y="26" width="326.5" height="30.5"/>
+                                                <rect key="frame" x="44" y="35.666666666666671" width="326.33333333333331" height="30.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -34,13 +34,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-sh-H63" userLabel="SearchBarView">
-                                        <rect key="frame" x="0.0" y="83.5" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="102.33333333333334" width="414" height="101.33333333333334"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="adn-bI-dmQ">
-                                                <rect key="frame" x="8" y="13.5" width="359" height="55.5"/>
+                                                <rect key="frame" x="8" y="13.666666666666657" width="398" height="74.333333333333329"/>
                                                 <subviews>
                                                     <searchBar contentMode="redraw" barStyle="black" placeholder="Enter a country" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r01-Y2-84c">
-                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="74.333333333333329"/>
                                                         <color key="barTintColor" red="0.1082497165" green="0.2622925639" blue="0.28235745429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <scopeButtonTitles>
@@ -59,19 +59,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Dw-rA-C8X" userLabel="TotalCaseView">
-                                        <rect key="frame" x="0.0" y="167" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="204.66666666666666" width="414" height="101.33333333333334"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="6Wj-Yv-Ito">
-                                                <rect key="frame" x="72.5" y="27" width="230.5" height="28.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="6Wj-Yv-Ito">
+                                                <rect key="frame" x="66.666666666666657" y="36.666666666666657" width="280.66666666666674" height="28.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL CASES: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml2-PF-usy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="161" height="28.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161" height="28.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="24"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow0-li-kwd">
-                                                        <rect key="frame" x="221" y="0.0" width="9.5" height="28.5"/>
+                                                        <rect key="frame" x="271" y="0.0" width="9.6666666666666856" height="28.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -85,19 +85,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mT1-4k-rWj" userLabel="TotalDeathView">
-                                        <rect key="frame" x="0.0" y="250.5" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="101.66666666666669"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Vvo-Gr-BSf">
-                                                <rect key="frame" x="73.5" y="27.5" width="228" height="27.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="Vvo-Gr-BSf">
+                                                <rect key="frame" x="68" y="37" width="278" height="27.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL DEATHS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3d3-MZ-gE9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="27.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="158.33333333333334" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0K-2R-lN0">
-                                                        <rect key="frame" x="218.5" y="0.0" width="9.5" height="27.5"/>
+                                                        <rect key="frame" x="268.33333333333331" y="0.0" width="9.6666666666666856" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -111,19 +111,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FmK-ET-mKs" userLabel="TotalRecoveredView">
-                                        <rect key="frame" x="0.0" y="334" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="409.66666666666669" width="414" height="101.33333333333331"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Mkb-fb-L3U">
-                                                <rect key="frame" x="50.5" y="27.5" width="274.5" height="27.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="Mkb-fb-L3U">
+                                                <rect key="frame" x="67.333333333333343" y="37" width="279.66666666666663" height="27.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL RECOVERED:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PT2-TA-Why">
-                                                        <rect key="frame" x="0.0" y="0.0" width="205" height="27.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="205" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-8q-a7r">
-                                                        <rect key="frame" x="265" y="0.0" width="9.5" height="27.5"/>
+                                                        <rect key="frame" x="270" y="0.0" width="9.6666666666666856" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -137,19 +137,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-Q2-E3b" userLabel="NewCaseView">
-                                        <rect key="frame" x="0.0" y="417.5" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="511.99999999999994" width="414" height="101.33333333333331"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="314-CP-6Pz">
-                                                <rect key="frame" x="85.5" y="27.5" width="204" height="27.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="131" translatesAutoresizingMaskIntoConstraints="NO" id="314-CP-6Pz">
+                                                <rect key="frame" x="69.666666666666686" y="37" width="275" height="27.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW CASES:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-UO-Zyb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="27.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="134.33333333333334" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmY-k2-51T">
-                                                        <rect key="frame" x="194.5" y="0.0" width="9.5" height="27.5"/>
+                                                        <rect key="frame" x="265.33333333333331" y="0.0" width="9.6666666666666856" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -163,19 +163,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGQ-oT-tov" userLabel="NewDeathView">
-                                        <rect key="frame" x="0.0" y="501" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="614.33333333333337" width="414" height="101.33333333333337"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="tij-T2-Eou">
-                                                <rect key="frame" x="80.5" y="27.5" width="214.5" height="27.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="117" translatesAutoresizingMaskIntoConstraints="NO" id="tij-T2-Eou">
+                                                <rect key="frame" x="71.333333333333343" y="37" width="271.66666666666663" height="27.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW DEATHS:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOz-Qi-cx3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="27.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-LB-lsu">
-                                                        <rect key="frame" x="205" y="0.0" width="9.5" height="27.5"/>
+                                                        <rect key="frame" x="262" y="0.0" width="9.6666666666666856" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -189,19 +189,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnn-gS-WPG" userLabel="NewRecoveredView">
-                                        <rect key="frame" x="0.0" y="584.5" width="375" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="716.66666666666663" width="414" height="101.33333333333337"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-VZ-1eI">
-                                                <rect key="frame" x="57" y="27.5" width="261" height="27.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-VZ-1eI">
+                                                <rect key="frame" x="72" y="37" width="270" height="27.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW RECOVERED:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyo-dM-xEQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="191.5" height="27.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="191.33333333333334" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OV-Ob-FA4">
-                                                        <rect key="frame" x="251.5" y="0.0" width="9.5" height="27.5"/>
+                                                        <rect key="frame" x="260.33333333333331" y="0.0" width="9.6666666666666856" height="27.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
